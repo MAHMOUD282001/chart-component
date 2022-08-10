@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.content{
+    width: 450px;
+}
+
+.content .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.content .head .right-content{
+    width: 50px;
+}
+
+.content .head .right-content img{
+    width: 100%;
+}
+
+.content .head .left-content p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.content .head .left-content h5{
+    padding-top: 7px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.inner-content{
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.inner-content h5{
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 25px;
+
+}
+
+.height-value{
+    display: none;
+}
+
+.height-value.active{
+    display: block;
+}
+
+.chart{
+    margin-top: 50px;
+    border-bottom: 1px solid hsl(186, 34%, 60%);
+    padding-bottom: 30px;
+}
+
+.chart > div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.chart p{
+    text-align: center;
+}
+
+
+.chart .colored{
+    width: 40px;
+    /* height: 50px; */
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 7px;
+    transition: all .5s ease-in-out;
+}
+
+.chart .colored:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+
+
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.total .this h5{
+    padding: 0;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.total .last{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.total .last h6{
+    font-size: 15px;
+}
+
+.total .last p{
+    font-size: 14px;
+    color: hsl(28, 10%, 53%);
+}
+
+
+@media(max-width:500px){
+    .content{
+        width: 300px;
+    }
+    
+    .chart .colored{
+        width: 30px;
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 7px;
+        transition: all .5s ease-in-out;
+    }
+    
+    .height-value{
+        font-size: 12px;
+    }
+    
+    .day{
+        font-size: 12px;
+    }
+    
+    .total .this h5{
+        font-size: 25px;
+    }
+}
